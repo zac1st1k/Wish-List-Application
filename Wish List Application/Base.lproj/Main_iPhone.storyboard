@@ -46,9 +46,13 @@
                             <constraint firstItem="KGf-Tf-Fnh" firstAttribute="centerX" secondItem="vA5-HK-mey" secondAttribute="centerX" id="u59-Fg-PzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="KGf-Tf-Fnh" id="TcB-7n-e0f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="94" y="174"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
