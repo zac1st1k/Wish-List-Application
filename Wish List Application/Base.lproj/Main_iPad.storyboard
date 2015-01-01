@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="CfB-MV-tvX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -7,6 +7,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="XZZViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -50,9 +51,84 @@
                         <outlet property="label" destination="z85-9p-W2j" id="w90-bl-3pd"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878" y="-474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vMP-yv-u6A">
+            <objects>
+                <viewController id="CfB-MV-tvX" customClass="XZZViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVc-u7-Jfb"/>
+                        <viewControllerLayoutGuide type="bottom" id="zSf-oi-C2a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fGU-P1-D3s">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rocketship" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSX-gb-kwG">
+                                <rect key="frame" x="341" y="501" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pony" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6is-Mj-UOR">
+                                <rect key="frame" x="365" y="430" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elephant" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3w-ep-XAt">
+                                <rect key="frame" x="351" y="572" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gY-xE-dlZ">
+                                <rect key="frame" x="20" y="40" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="5Lt-B6-aUs"/>
+                                </constraints>
+                                <state key="normal" title="Will I get one?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-3x-3Uo">
+                                <rect key="frame" x="138" y="40" width="610" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="162" id="RgT-GZ-gr2"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Want"/>
+                                    <segment title="Don't want"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6is-Mj-UOR" firstAttribute="centerX" secondItem="lSX-gb-kwG" secondAttribute="centerX" id="3vG-Rl-SqE"/>
+                            <constraint firstItem="jLR-3x-3Uo" firstAttribute="leading" secondItem="3gY-xE-dlZ" secondAttribute="trailing" constant="20" id="IZm-jG-LxM"/>
+                            <constraint firstItem="h3w-ep-XAt" firstAttribute="centerX" secondItem="lSX-gb-kwG" secondAttribute="centerX" id="KTN-P8-Yni"/>
+                            <constraint firstItem="3gY-xE-dlZ" firstAttribute="top" secondItem="KVc-u7-Jfb" secondAttribute="bottom" constant="20" id="NIn-Ja-5KR"/>
+                            <constraint firstAttribute="centerX" secondItem="6is-Mj-UOR" secondAttribute="centerX" constant="-0.5" id="TTL-9s-7Nm"/>
+                            <constraint firstAttribute="trailing" secondItem="jLR-3x-3Uo" secondAttribute="trailing" constant="20" id="Uq3-5l-XpJ"/>
+                            <constraint firstAttribute="centerY" secondItem="lSX-gb-kwG" secondAttribute="centerY" constant="0.5" id="WiW-Hh-zch"/>
+                            <constraint firstItem="lSX-gb-kwG" firstAttribute="top" secondItem="6is-Mj-UOR" secondAttribute="bottom" constant="50" id="bzt-ta-u51"/>
+                            <constraint firstItem="3gY-xE-dlZ" firstAttribute="leading" secondItem="fGU-P1-D3s" secondAttribute="leading" constant="20" id="kTo-J9-P13"/>
+                            <constraint firstItem="h3w-ep-XAt" firstAttribute="top" secondItem="lSX-gb-kwG" secondAttribute="bottom" constant="50" id="oJo-P3-Hxe"/>
+                            <constraint firstItem="jLR-3x-3Uo" firstAttribute="top" secondItem="KVc-u7-Jfb" secondAttribute="bottom" constant="20" id="whI-w5-bec"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="h3w-ep-XAt" id="TfK-CH-QTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYL-iq-g3a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="-289"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
